@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main() {
     int temp[10], i, k, x, aux, maior;
-    printf("===Digite valores aleatorios===\n\n");//Recebe os valores.
+    printf("===Digite valores aleatorios===\n\n");
     
-    for(i=0;i<10;i++) {
+    for(i=0;i<10;i++) {//Recebe os valores.
         printf("Digite um valor: ");
         scanf("%d", &temp[i]);
         

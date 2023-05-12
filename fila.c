@@ -5,7 +5,7 @@ int inicio = -1;
 int fim = -1;
 int fila[10];
 
-void enfileirar(int valor){
+void enfileirar(int valor){//Enfileira os elementos na fila.
    if(fim==9){
       printf("Erro: a fila esta cheia!\n");
    } else{
@@ -16,7 +16,7 @@ void enfileirar(int valor){
       fila[fim]=valor;
    }
 }
-void desenfileirar(){
+void desenfileirar(){//Desenfileira os elementos na fila.
    if(inicio==-1 || inicio>fim){
       printf("Erro: a fila esta vazia!");
    } else{
@@ -25,7 +25,7 @@ void desenfileirar(){
    }
 }
 
-void imprimir(){
+void imprimir(){//Imprime os elemtos da fila.
    if (inicio==-1 || inicio>fim){
       printf("A fila esta vazia!\n");
    } else{
@@ -40,7 +40,7 @@ void imprimir(){
 int main(){
    int opcao, valor;
 
-   do{
+   do{ //Mostra as opções.
       printf("\nSelecione uma opcao:\n");
       printf("1 - Enfileirar\n");
       printf("2 - Desenfileirar\n");
